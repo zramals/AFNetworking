@@ -732,7 +732,7 @@ didReceiveResponse:(NSURLResponse *)response
     return YES;
 }
 
-- (id)initWithCoder:(NSCoder *)decoder {
+- (instancetype)initWithCoder:(NSCoder *)decoder {
     NSURLRequest *request = [decoder decodeObjectOfClass:[NSURLRequest class] forKey:NSStringFromSelector(@selector(request))];
 
     self = [self initWithRequest:request];

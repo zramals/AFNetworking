@@ -34,6 +34,6 @@ extern NSString * const kUserProfileImageDidLoadNotification;
 @property (nonatomic, strong) NSImage *profileImage;
 #endif
 
-- (instancetype)initWithAttributes:(NSDictionary *)attributes;
+- (instancetype)initWithAttributes:(NSDictionary *)attributes NS_DESIGNATED_INITIALIZER;
 
 @end

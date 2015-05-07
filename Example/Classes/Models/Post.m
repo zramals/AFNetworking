@@ -57,7 +57,7 @@
         }
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
         if (block) {
-            block([NSArray array], error);
+            block(@[], error);
         }
     }];
 }

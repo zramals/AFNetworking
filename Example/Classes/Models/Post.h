@@ -31,7 +31,7 @@
 
 @property (nonatomic, strong) User *user;
 
-- (instancetype)initWithAttributes:(NSDictionary *)attributes;
+- (instancetype)initWithAttributes:(NSDictionary *)attributes NS_DESIGNATED_INITIALIZER;
 
 + (NSURLSessionDataTask *)globalTimelinePostsWithBlock:(void (^)(NSArray *posts, NSError *error))block;
 

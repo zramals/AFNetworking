@@ -191,7 +191,7 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
     return securityPolicy;
 }
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (!self) {
         return nil;
